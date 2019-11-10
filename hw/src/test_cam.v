@@ -99,7 +99,7 @@ assign CAM_reset=  0;
   utilizado para la camara , a partir de una frecuencia de 32 Mhz
 **************************************************************************** */
 //assign clk32M =clk;
-clk_32MHZ_to_25M_24M
+clk24_25_nexys4
   clk25_24(
   .CLK_IN1(clk),
   .CLK_OUT1(clk25M),
