@@ -1,0 +1,30 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/test_cam_isim_beh.exe -prj /home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/test_cam_beh.prj work.test_cam work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/VGA_driver.v" into library work
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/buffer_ram_dp.v" into library work
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" into library work
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/Captura_de_datos.v" into library work
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 106: Port LOCKED is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 85660 KB
+Fuse CPU Usage: 1050 ms
+Compiling module BUFG
+Compiling module MMCME2_ADV(CLKOUT1_DIVIDE=50,CLK...
+Compiling module clk24_25_nexys4
+Compiling module buffer_ram_dp(AW=15,DW=8)
+Compiling module VGA_Driver640x480_default
+Compiling module Captura_de_datos
+Compiling module test_cam
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 8 Verilog Units
+Built simulation executable /home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/test_cam_isim_beh.exe
+Fuse Memory Usage: 658404 KB
+Fuse CPU Usage: 1160 ms
+GCC CPU Usage: 3110 ms

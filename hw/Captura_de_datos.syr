@@ -1,0 +1,409 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Captura_de_datos.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Captura_de_datos.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Captura_de_datos"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Captura_de_datos
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/Captura_de_datos.v" into library work
+Parsing module <Captura_de_datos>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Captura_de_datos>.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/Captura_de_datos.v" Line 66: Result of 16-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/Captura_de_datos.v" Line 67: Result of 16-bit expression is truncated to fit in 15-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Captura_de_datos>.
+    Related source file is "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/Captura_de_datos.v".
+WARNING:Xst:647 - Input <D<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <countData>.
+    Found 1-bit register for signal <write>.
+    Found 15-bit register for signal <addr>.
+    Found 15-bit register for signal <address>.
+    Found 8-bit register for signal <RGB332>.
+    Found 15-bit adder for signal <address[14]_GND_1_o_add_3_OUT> created at line 66.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <Captura_de_datos> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 15-bit adder                                          : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 15-bit register                                       : 2
+ 8-bit register                                        : 1
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Captura_de_datos>.
+The following registers are absorbed into counter <address>: 1 register on signal <address>.
+Unit <Captura_de_datos> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 15-bit adder                                          : 1
+# Counters                                             : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Captura_de_datos> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Captura_de_datos, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Captura_de_datos.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 131
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 28
+#      LUT2                        : 1
+#      LUT3                        : 10
+#      LUT4                        : 30
+#      MUXCY                       : 28
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 40
+#      FD                          : 2
+#      FDE                         : 38
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 9
+#      OBUF                        : 24
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              40  out of  11440     0%  
+ Number of Slice LUTs:                   71  out of   5720     1%  
+    Number used as Logic:                71  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     71
+   Number with an unused Flip Flop:      31  out of     71    43%  
+   Number with an unused LUT:             0  out of     71     0%  
+   Number of fully used LUT-FF pairs:    40  out of     71    56%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          35
+ Number of bonded IOBs:                  34  out of    102    33%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Pclk                               | BUFGP                  | 40    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.789ns (Maximum Frequency: 358.539MHz)
+   Minimum input arrival time before clock: 3.959ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Pclk'
+  Clock period: 2.789ns (frequency: 358.539MHz)
+  Total number of paths / destination ports: 318 / 70
+-------------------------------------------------------------------------
+Delay:               2.789ns (Levels of Logic = 17)
+  Source:            address_0 (FF)
+  Destination:       addr_14 (FF)
+  Source Clock:      Pclk rising
+  Destination Clock: Pclk rising
+
+  Data Path: address_0 to addr_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.650  address_0 (address_0)
+     INV:I->O              1   0.206   0.000  Madd_address[14]_GND_1_o_add_3_OUT_lut<0>_INV_0 (Madd_address[14]_GND_1_o_add_3_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<0> (Madd_address[14]_GND_1_o_add_3_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<1> (Madd_address[14]_GND_1_o_add_3_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<2> (Madd_address[14]_GND_1_o_add_3_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<3> (Madd_address[14]_GND_1_o_add_3_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<4> (Madd_address[14]_GND_1_o_add_3_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<5> (Madd_address[14]_GND_1_o_add_3_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<6> (Madd_address[14]_GND_1_o_add_3_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<7> (Madd_address[14]_GND_1_o_add_3_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<8> (Madd_address[14]_GND_1_o_add_3_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<9> (Madd_address[14]_GND_1_o_add_3_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<10> (Madd_address[14]_GND_1_o_add_3_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<11> (Madd_address[14]_GND_1_o_add_3_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<12> (Madd_address[14]_GND_1_o_add_3_OUT_cy<12>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_address[14]_GND_1_o_add_3_OUT_cy<13> (Madd_address[14]_GND_1_o_add_3_OUT_cy<13>)
+     XORCY:CI->O           1   0.180   0.580  Madd_address[14]_GND_1_o_add_3_OUT_xor<14> (address[14]_GND_1_o_add_3_OUT<14>)
+     LUT4:I3->O            1   0.205   0.000  addr_14_dpot (addr_14_dpot)
+     FDE:D                     0.102          addr_14
+    ----------------------------------------
+    Total                      2.789ns (1.559ns logic, 1.230ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Pclk'
+  Total number of paths / destination ports: 88 / 48
+-------------------------------------------------------------------------
+Offset:              3.959ns (Levels of Logic = 2)
+  Source:            Vsync (PAD)
+  Destination:       RGB332_0 (FF)
+  Destination Clock: Pclk rising
+
+  Data Path: Vsync to RGB332_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.222   1.410  Vsync_IBUF (Vsync_IBUF)
+     LUT2:I0->O            8   0.203   0.802  _n0080_inv1 (_n0080_inv)
+     FDE:CE                    0.322          RGB332_0
+    ----------------------------------------
+    Total                      3.959ns (1.747ns logic, 2.212ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Pclk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            addr_14 (FF)
+  Destination:       addr<14> (PAD)
+  Source Clock:      Pclk rising
+
+  Data Path: addr_14 to addr<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  addr_14 (addr_14)
+     OBUF:I->O                 2.571          addr_14_OBUF (addr<14>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Pclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Pclk           |    2.789|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.32 secs
+ 
+--> 
+
+
+Total memory usage is 383968 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

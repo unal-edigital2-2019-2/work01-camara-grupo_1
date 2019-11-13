@@ -21,6 +21,10 @@
 module test_cam(
     input wire clk,           // board clock: 32 MHz 
     input wire rst,         	// reset button
+	 input wire Href,
+	 input wire Vsync,
+	 input wire Pclk,
+	 input wire [7:0]D,
 
 	// VGA input/output  
     output wire VGA_Hsync_n,  // horizontal sync output
@@ -142,7 +146,13 @@ VGA_Driver640x480 VGA640x480
 
 );
 
- 
+/* ****************************************************************************
+Captura_de_datos
+**************************************************************************** */
+Captura_de_datos Captura_de_datos
+
+(Href,Vsync,Pclk,D,DP_RAM_addr_in,DP_RAM_data_in,DP_RAM_regW);
+
 /* ****************************************************************************
 LÓgica para actualizar el pixel acorde con la buffer de memoria y el pixel de 
 VGA si la imagen de la camara es menor que el display  VGA, los pixeles 
@@ -154,6 +164,5 @@ always @ (VGA_posX, VGA_posY) begin
 		else
 			DP_RAM_addr_out=VGA_posX+VGA_posY*CAM_SCREEN_Y;
 end
-
 
 endmodule
