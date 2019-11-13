@@ -31,7 +31,7 @@ module test_cam(
 	
 	//CAMARA input/output
 	
-	output wire CAM_xclk,		// System  clock imput
+	output wire CAM_xclk,		// System  clock input
 	output wire CAM_pwdn,		// power down mode 
 	output wire CAM_reset		// clear all registers of cam
 	// colocar aqui las entras  y salidas de la camara 
