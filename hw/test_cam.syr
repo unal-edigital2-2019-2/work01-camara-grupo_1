@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Reading design: test_cam.prj
@@ -49,7 +49,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "test_cam"
 Output Format                      : NGC
-Target Device                      : xc6slx9-3-tqg144
+Target Device                      : xc7a100t-3-csg324
 
 ---- Source Options
 Top Module Name                    : test_cam
@@ -73,7 +73,7 @@ LUT Combining                      : Auto
 Reduce Control Sets                : Auto
 Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
-Add Generic Clock Buffer(BUFG)     : 16
+Add Generic Clock Buffer(BUFG)     : 32
 Register Duplication               : YES
 Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
@@ -108,71 +108,69 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/VGA_driver.v" into library work
+Analyzing Verilog file "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/VGA_driver.v" into library work
 Parsing module <VGA_Driver640x480>.
-Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/buffer_ram_dp.v" into library work
+Analyzing Verilog file "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/buffer_ram_dp.v" into library work
 Parsing module <buffer_ram_dp>.
-Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" into library work
+Analyzing Verilog file "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/Down_sampler.v" into library work
+Parsing module <Down_sampler>.
+Analyzing Verilog file "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" into library work
 Parsing module <clk24_25_nexys4>.
-Analyzing Verilog file "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" into library work
+Analyzing Verilog file "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v" into library work
 Parsing module <test_cam>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 102: Port LOCKED is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v" Line 120: Port LOCKED is not connected to this instance
 
 Elaborating module <test_cam>.
+
+Elaborating module <Down_sampler>.
 
 Elaborating module <clk24_25_nexys4>.
 
 Elaborating module <BUFG>.
 
 Elaborating module <MMCME2_ADV(BANDWIDTH="OPTIMIZED",CLKOUT4_CASCADE="FALSE",COMPENSATION="ZHOLD",STARTUP_WAIT="FALSE",DIVCLK_DIVIDE=1,CLKFBOUT_MULT_F=12.0,CLKFBOUT_PHASE=0.0,CLKFBOUT_USE_FINE_PS="FALSE",CLKOUT0_DIVIDE_F=48.0,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT0_USE_FINE_PS="FALSE",CLKOUT1_DIVIDE=50,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT1_USE_FINE_PS="FALSE",CLKIN1_PERIOD=10.0,REF_JITTER1=0.01)>.
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 132: Assignment to clkfboutb_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 134: Assignment to clkout0b_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 136: Assignment to clkout1b_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 137: Assignment to clkout2_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 138: Assignment to clkout2b_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 139: Assignment to clkout3_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 140: Assignment to clkout3b_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 141: Assignment to clkout4_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 142: Assignment to clkout5_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 143: Assignment to clkout6_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 155: Assignment to do_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 156: Assignment to drdy_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 162: Assignment to psdone_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 165: Assignment to clkinstopped_unused ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 166: Assignment to clkfbstopped_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 132: Assignment to clkfboutb_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 134: Assignment to clkout0b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 136: Assignment to clkout1b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 137: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 138: Assignment to clkout2b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 139: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 140: Assignment to clkout3b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 141: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 142: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 143: Assignment to clkout6_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 155: Assignment to do_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 156: Assignment to drdy_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 162: Assignment to psdone_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 165: Assignment to clkinstopped_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 166: Assignment to clkfbstopped_unused ignored, since the identifier is never used
 
 Elaborating module <buffer_ram_dp(AW=15,DW=8)>.
 Reading initialization file \"src/image.men\".
-WARNING:HDLCompiler:1670 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/buffer_ram_dp.v" Line 53: Signal <ram> in initial block is partially initialized.
+WARNING:HDLCompiler:1670 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/buffer_ram_dp.v" Line 53: Signal <ram> in initial block is partially initialized.
 
 Elaborating module <VGA_Driver640x480>.
-WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/VGA_driver.v" Line 68: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/VGA_driver.v" Line 72: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 155: Result of 17-bit expression is truncated to fit in 15-bit target.
-WARNING:HDLCompiler:634 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 61: Net <DP_RAM_addr_in[14]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 62: Net <DP_RAM_data_in[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 63: Net <DP_RAM_regW> does not have a driver.
+WARNING:HDLCompiler:413 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/VGA_driver.v" Line 68: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/VGA_driver.v" Line 72: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v" Line 173: Result of 17-bit expression is truncated to fit in 15-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <test_cam>.
-    Related source file is "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v".
+    Related source file is "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v".
         CAM_SCREEN_X = 160
         CAM_SCREEN_Y = 120
-INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" line 103: Output port <LOCKED> of the instance <clk25_24> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <DP_RAM_addr_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <DP_RAM_data_in> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <DP_RAM_regW> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 16-bit adder for signal <n0020> created at line 155.
-    Found 9x7-bit multiplier for signal <n0026> created at line 155.
-    Found 10-bit comparator greater for signal <GND_1_o_VGA_posX[9]_LessThan_4_o> created at line 152
-    Found 9-bit comparator greater for signal <GND_1_o_VGA_posY[8]_LessThan_5_o> created at line 152
+INFO:Xst:3210 - "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v" line 121: Output port <LOCKED> of the instance <clk25_24> is unconnected or connected to loadless signal.
+    Found 16-bit adder for signal <n0023> created at line 173.
+    Found 9x7-bit multiplier for signal <n0029> created at line 173.
+    Found 10-bit comparator greater for signal <GND_1_o_VGA_posX[9]_LessThan_4_o> created at line 170
+    Found 9-bit comparator greater for signal <GND_1_o_VGA_posY[8]_LessThan_5_o> created at line 170
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
@@ -180,14 +178,31 @@ WARNING:Xst:653 - Signal <DP_RAM_regW> is used but never assigned. This sourcele
 	inferred   1 Multiplexer(s).
 Unit <test_cam> synthesized.
 
+Synthesizing Unit <Down_sampler>.
+    Related source file is "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/Down_sampler.v".
+    Found 15-bit register for signal <address>.
+    Found 1-bit register for signal <href_last>.
+    Found 2-bit register for signal <cnt>.
+    Found 8-bit register for signal <DP_RAM_data_in>.
+    Found 3-bit register for signal <hold_green>.
+    Found 3-bit register for signal <hold_red>.
+    Found 8-bit register for signal <d_latch>.
+    Found 15-bit adder for signal <address[14]_GND_2_o_add_6_OUT> created at line 61.
+    Found 2-bit adder for signal <cnt[1]_GND_2_o_add_9_OUT> created at line 64.
+    WARNING:Xst:2404 -  FFs/Latches <DP_RAM_regW<0:0>> (without init value) have a constant value of 0 in block <Down_sampler>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+Unit <Down_sampler> synthesized.
+
 Synthesizing Unit <clk24_25_nexys4>.
-    Related source file is "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v".
+    Related source file is "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v".
     Summary:
 	no macro.
 Unit <clk24_25_nexys4> synthesized.
 
 Synthesizing Unit <buffer_ram_dp>.
-    Related source file is "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/buffer_ram_dp.v".
+    Related source file is "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/buffer_ram_dp.v".
         AW = 15
         DW = 8
         imageFILE = "src/image.men"
@@ -199,16 +214,16 @@ Synthesizing Unit <buffer_ram_dp>.
 Unit <buffer_ram_dp> synthesized.
 
 Synthesizing Unit <VGA_Driver640x480>.
-    Related source file is "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/VGA_driver.v".
+    Related source file is "/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/VGA_driver.v".
     Found 9-bit register for signal <countY>.
     Found 10-bit register for signal <countX>.
-    Found 9-bit adder for signal <countY[8]_GND_6_o_add_10_OUT> created at line 68.
-    Found 10-bit adder for signal <countX[9]_GND_6_o_add_11_OUT> created at line 72.
-    Found 10-bit comparator greater for signal <countX[9]_PWR_6_o_LessThan_3_o> created at line 50
+    Found 9-bit adder for signal <countY[8]_GND_7_o_add_10_OUT> created at line 68.
+    Found 10-bit adder for signal <countX[9]_GND_7_o_add_11_OUT> created at line 72.
+    Found 10-bit comparator greater for signal <countX[9]_PWR_7_o_LessThan_3_o> created at line 50
     Found 10-bit comparator lessequal for signal <n0004> created at line 52
-    Found 10-bit comparator greater for signal <countX[9]_PWR_6_o_LessThan_6_o> created at line 52
+    Found 10-bit comparator greater for signal <countX[9]_PWR_7_o_LessThan_6_o> created at line 52
     Found 9-bit comparator lessequal for signal <n0009> created at line 53
-    Found 9-bit comparator greater for signal <countY[8]_PWR_6_o_LessThan_8_o> created at line 53
+    Found 9-bit comparator greater for signal <countY[8]_PWR_7_o_LessThan_8_o> created at line 53
     Found 10-bit comparator greater for signal <n0014> created at line 62
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -225,13 +240,19 @@ Macro Statistics
  32768x8-bit dual-port RAM                             : 1
 # Multipliers                                          : 1
  9x7-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 5
  10-bit adder                                          : 1
+ 15-bit adder                                          : 1
  16-bit adder                                          : 1
+ 2-bit adder                                           : 1
  9-bit adder                                           : 1
-# Registers                                            : 3
+# Registers                                            : 10
+ 1-bit register                                        : 1
  10-bit register                                       : 1
- 8-bit register                                        : 1
+ 15-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+ 8-bit register                                        : 3
  9-bit register                                        : 1
 # Comparators                                          : 8
  10-bit comparator greater                             : 4
@@ -249,6 +270,11 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <Down_sampler>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <address>: 1 register on signal <address>.
+Unit <Down_sampler> synthesized (advanced).
+
 Synthesizing (advanced) Unit <VGA_Driver640x480>.
 The following registers are absorbed into counter <countX>: 1 register on signal <countX>.
 The following registers are absorbed into counter <countY>: 1 register on signal <countY>.
@@ -263,9 +289,9 @@ INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing
     |     aspect ratio   | 32768-word x 8-bit                  |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk_w>         | rise     |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <GND>           |          |
-    |     diA            | connected to signal <GND>           |          |
+    |     weA            | connected to signal <regwrite>      | high     |
+    |     addrA          | connected to signal <addr_in>       |          |
+    |     diA            | connected to signal <data_in>       |          |
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
@@ -281,7 +307,7 @@ INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing
 Unit <buffer_ram_dp> synthesized (advanced).
 
 Synthesizing (advanced) Unit <test_cam>.
-	Multiplier <Mmult_n0026> in block <test_cam> and adder/subtractor <Madd_n0020_Madd> in block <test_cam> are combined into a MAC<Maddsub_n0026>.
+	Multiplier <Mmult_n0029> in block <test_cam> and adder/subtractor <Madd_n0023_Madd> in block <test_cam> are combined into a MAC<Maddsub_n0029>.
 Unit <test_cam> synthesized (advanced).
 
 =========================================================================
@@ -292,9 +318,13 @@ Macro Statistics
  32768x8-bit dual-port block RAM                       : 1
 # MACs                                                 : 1
  9x7-to-15-bit MAC                                     : 1
-# Counters                                             : 2
+# Counters                                             : 4
  10-bit up counter                                     : 1
+ 15-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
  9-bit up counter                                      : 1
+# Registers                                            : 23
+ Flip-Flops                                            : 23
 # Comparators                                          : 8
  10-bit comparator greater                             : 4
  10-bit comparator lessequal                           : 1
@@ -312,20 +342,13 @@ Macro Statistics
 
 Optimizing unit <test_cam> ...
 
+Optimizing unit <Down_sampler> ...
+
 Optimizing unit <VGA_Driver640x480> ...
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram2>, <DP_RAM/Mram_ram4> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram2>, <DP_RAM/Mram_ram6> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram2>, <DP_RAM/Mram_ram8> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram2>, <DP_RAM/Mram_ram10> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram2>, <DP_RAM/Mram_ram12> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram2>, <DP_RAM/Mram_ram14> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram2>, <DP_RAM/Mram_ram16> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram1>, <DP_RAM/Mram_ram3> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram1>, <DP_RAM/Mram_ram5> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram1>, <DP_RAM/Mram_ram11> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram1>, <DP_RAM/Mram_ram9> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram1>, <DP_RAM/Mram_ram13> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <DP_RAM/Mram_ram1>, <DP_RAM/Mram_ram15> are equivalent, second RAM is removed
+WARNING:Xst:1293 - FF/Latch <Down_sampler_mod/cnt_1> has a constant value of 0 in block <test_cam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Down_sampler_mod/cnt_0> has a constant value of 0 in block <test_cam>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Down_sampler_mod/href_last> is unconnected in block <test_cam>.
+INFO:Xst:2261 - The FF/Latch <Down_sampler_mod/address_14> in Unit <test_cam> is equivalent to the following 14 FFs/Latches, which will be removed : <Down_sampler_mod/address_13> <Down_sampler_mod/address_12> <Down_sampler_mod/address_11> <Down_sampler_mod/address_10> <Down_sampler_mod/address_9> <Down_sampler_mod/address_8> <Down_sampler_mod/address_7> <Down_sampler_mod/address_6> <Down_sampler_mod/address_5> <Down_sampler_mod/address_4> <Down_sampler_mod/address_3> <Down_sampler_mod/address_2> <Down_sampler_mod/address_1> <Down_sampler_mod/address_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -333,12 +356,26 @@ Found area constraint ratio of 100 (+ 5) on block test_cam, actual ratio is 0.
 
 Final Macro Processing ...
 
+Processing Unit <test_cam> :
+	Found 3-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_7>.
+	Found 3-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_6>.
+	Found 3-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_5>.
+	Found 3-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_4>.
+	Found 3-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_3>.
+	Found 3-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_2>.
+	Found 2-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_1>.
+	Found 2-bit shift register for signal <Down_sampler_mod/DP_RAM_data_in_0>.
+Unit <test_cam> processed.
+
 =========================================================================
 Final Register Report
 
 Macro Statistics
 # Registers                                            : 20
  Flip-Flops                                            : 20
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 2
+ 3-bit shift register                                  : 6
 
 =========================================================================
 
@@ -361,61 +398,66 @@ Top Level Output File Name         : test_cam.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 82
+# BELS                             : 202
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 17
-#      LUT2                        : 16
-#      LUT3                        : 1
-#      LUT5                        : 1
-#      LUT6                        : 7
-#      MUXCY                       : 17
+#      INV                         : 3
+#      LUT1                        : 35
+#      LUT2                        : 31
+#      LUT3                        : 3
+#      LUT4                        : 12
+#      LUT5                        : 10
+#      LUT6                        : 11
+#      MUXCY                       : 52
 #      VCC                         : 1
-#      XORCY                       : 19
-# FlipFlops/Latches                : 20
-#      FD                          : 1
-#      FDR                         : 10
+#      XORCY                       : 43
+# FlipFlops/Latches                : 28
+#      FD                          : 6
+#      FDE                         : 8
+#      FDR                         : 4
 #      FDRE                        : 9
-# RAMS                             : 3
-#      RAMB16BWER                  : 3
-# Clock Buffers                    : 4
+#      FDSE                        : 1
+# RAMS                             : 8
+#      RAMB36E1                    : 8
+# Shift Registers                  : 8
+#      SRLC16E                     : 8
+# Clock Buffers                    : 5
 #      BUFG                        : 4
-# IO Buffers                       : 19
-#      IBUF                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 10
 #      IBUFG                       : 1
 #      OBUF                        : 17
-# DSPs                             : 1
-#      DSP48A1                     : 1
 # Others                           : 1
 #      MMCME2_ADV                  : 1
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx9tqg144-3 
+Selected Device : 7a100tcsg324-3 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              20  out of  11440     0%  
- Number of Slice LUTs:                   44  out of   5720     0%  
-    Number used as Logic:                44  out of   5720     0%  
+ Number of Slice Registers:              28  out of  126800     0%  
+ Number of Slice LUTs:                  113  out of  63400     0%  
+    Number used as Logic:               105  out of  63400     0%  
+    Number used as Memory:                8  out of  19000     0%  
+       Number used as SRL:                8
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     53
-   Number with an unused Flip Flop:      33  out of     53    62%  
-   Number with an unused LUT:             9  out of     53    16%  
-   Number of fully used LUT-FF pairs:    11  out of     53    20%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:    113
+   Number with an unused Flip Flop:      85  out of    113    75%  
+   Number with an unused LUT:             0  out of    113     0%  
+   Number of fully used LUT-FF pairs:    28  out of    113    24%  
+   Number of unique control sets:         5
 
 IO Utilization: 
- Number of IOs:                          19
- Number of bonded IOBs:                  19  out of    102    18%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  29  out of    210    13%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                3  out of     32     9%  
-    Number using Block RAM only:          3
- Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
- Number of DSP48A1s:                      1  out of     16     6%  
+ Number of Block RAM/FIFO:                8  out of    135     5%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
 
 ---------------------------
 Partition Resource Summary:
@@ -438,8 +480,9 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk25_24/clkout0                   | BUFG                   | 24    |
-clk                                | IBUFG                  | 3     |
+Pclk                               | BUFGP                  | 17    |
+clk25_24/clkout0                   | BUFG                   | 27    |
+clk                                | IBUFG                  | 8     |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -450,83 +493,140 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.309ns (Maximum Frequency: 136.824MHz)
-   Minimum input arrival time before clock: 3.698ns
-   Maximum output required time after clock: 6.358ns
-   Maximum combinational path delay: 2.078ns
+   Minimum period: 2.219ns (Maximum Frequency: 450.735MHz)
+   Minimum input arrival time before clock: 1.503ns
+   Maximum output required time after clock: 1.784ns
+   Maximum combinational path delay: 0.326ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk25_24/clkout0'
-  Clock period: 7.309ns (frequency: 136.824MHz)
-  Total number of paths / destination ports: 1258 / 92
+Timing constraint: Default period analysis for Clock 'Pclk'
+  Clock period: 1.906ns (frequency: 524.698MHz)
+  Total number of paths / destination ports: 23 / 9
 -------------------------------------------------------------------------
-Delay:               7.309ns (Levels of Logic = 2)
-  Source:            VGA640x480/countY_8 (FF)
-  Destination:       DP_RAM/Mram_ram2 (RAM)
-  Source Clock:      clk25_24/clkout0 rising
-  Destination Clock: clk25_24/clkout0 rising
+Delay:               1.906ns (Levels of Logic = 16)
+  Source:            Down_sampler_mod/address_14 (FF)
+  Destination:       Down_sampler_mod/address_14 (FF)
+  Source Clock:      Pclk rising
+  Destination Clock: Pclk rising
 
-  Data Path: VGA640x480/countY_8 to DP_RAM/Mram_ram2
+  Data Path: Down_sampler_mod/address_14 to Down_sampler_mod/address_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   0.447   0.683  VGA640x480/countY_8 (VGA640x480/countY_8)
-     DSP48A1:B8->P13       1   4.394   0.580  Maddsub_n0026 (n0020<13>)
-     LUT2:I1->O            3   0.205   0.650  Mmux_DP_RAM_addr_out51 (DP_RAM_addr_out<13>)
-     RAMB16BWER:ADDRB13        0.350          DP_RAM/Mram_ram2
+     FDSE:C->Q           135   0.361   0.402  Down_sampler_mod/address_14 (Down_sampler_mod/address_14)
+     INV:I->O              1   0.113   0.000  Down_sampler_mod/Mcount_address_lut<0>_INV_0 (Down_sampler_mod/Mcount_address_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Down_sampler_mod/Mcount_address_cy<0> (Down_sampler_mod/Mcount_address_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<1> (Down_sampler_mod/Mcount_address_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<2> (Down_sampler_mod/Mcount_address_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<3> (Down_sampler_mod/Mcount_address_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<4> (Down_sampler_mod/Mcount_address_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<5> (Down_sampler_mod/Mcount_address_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<6> (Down_sampler_mod/Mcount_address_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<7> (Down_sampler_mod/Mcount_address_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<8> (Down_sampler_mod/Mcount_address_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<9> (Down_sampler_mod/Mcount_address_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<10> (Down_sampler_mod/Mcount_address_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<11> (Down_sampler_mod/Mcount_address_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Down_sampler_mod/Mcount_address_cy<12> (Down_sampler_mod/Mcount_address_cy<12>)
+     MUXCY:CI->O           0   0.023   0.000  Down_sampler_mod/Mcount_address_cy<13> (Down_sampler_mod/Mcount_address_cy<13>)
+     XORCY:CI->O           1   0.370   0.000  Down_sampler_mod/Mcount_address_xor<14> (Down_sampler_mod/Result<14>)
+     FDSE:D                    0.008          Down_sampler_mod/address_14
     ----------------------------------------
-    Total                      7.309ns (5.396ns logic, 1.913ns route)
-                                       (73.8% logic, 26.2% route)
+    Total                      1.906ns (1.504ns logic, 0.402ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk25_24/clkout0'
+  Clock period: 2.219ns (frequency: 450.735MHz)
+  Total number of paths / destination ports: 290 / 32
+-------------------------------------------------------------------------
+Delay:               2.219ns (Levels of Logic = 2)
+  Source:            VGA640x480/countX_3 (FF)
+  Destination:       VGA640x480/countX_8 (FF)
+  Source Clock:      clk25_24/clkout0 rising
+  Destination Clock: clk25_24/clkout0 rising
+
+  Data Path: VGA640x480/countX_3 to VGA640x480/countX_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.361   0.693  VGA640x480/countX_3 (VGA640x480/countX_3)
+     LUT5:I0->O            3   0.097   0.305  VGA640x480/Mcount_countX_val21 (VGA640x480/Mcount_countX_val21)
+     LUT6:I5->O            9   0.097   0.316  VGA640x480/Mcount_countX_val1 (VGA640x480/Mcount_countX_val)
+     FDR:R                     0.349          VGA640x480/countX_9
+    ----------------------------------------
+    Total                      2.219ns (0.904ns logic, 1.315ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Pclk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.629ns (Levels of Logic = 1)
+  Source:            VSync (PAD)
+  Destination:       Down_sampler_mod/address_14 (FF)
+  Destination Clock: Pclk rising
+
+  Data Path: VSync to Down_sampler_mod/address_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  VSync_IBUF (VSync_IBUF)
+     FDSE:S                    0.349          Down_sampler_mod/address_14
+    ----------------------------------------
+    Total                      0.629ns (0.350ns logic, 0.279ns route)
+                                       (55.6% logic, 44.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk25_24/clkout0'
-  Total number of paths / destination ports: 20 / 20
+  Total number of paths / destination ports: 19 / 19
 -------------------------------------------------------------------------
-Offset:              3.698ns (Levels of Logic = 2)
+Offset:              1.503ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       VGA640x480/countX_0 (FF)
+  Destination:       VGA640x480/countX_8 (FF)
   Destination Clock: clk25_24/clkout0 rising
 
-  Data Path: rst to VGA640x480/countX_0
+  Data Path: rst to VGA640x480/countX_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.222   0.961  rst_IBUF (rst_IBUF)
-     LUT2:I0->O           11   0.203   0.882  VGA640x480/Mcount_countX_val1 (VGA640x480/Mcount_countX_val)
-     FDR:R                     0.430          VGA640x480/countX_0
+     IBUF:I->O            11   0.001   0.740  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            9   0.097   0.316  VGA640x480/Mcount_countX_val1 (VGA640x480/Mcount_countX_val)
+     FDR:R                     0.349          VGA640x480/countX_9
     ----------------------------------------
-    Total                      3.698ns (1.855ns logic, 1.843ns route)
-                                       (50.2% logic, 49.8% route)
+    Total                      1.503ns (0.447ns logic, 1.056ns route)
+                                       (29.7% logic, 70.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk25_24/clkout0'
-  Total number of paths / destination ports: 62 / 10
+  Total number of paths / destination ports: 38 / 10
 -------------------------------------------------------------------------
-Offset:              6.358ns (Levels of Logic = 2)
-  Source:            DP_RAM/Mram_ram2 (RAM)
-  Destination:       VGA_R<3> (PAD)
+Offset:              1.784ns (Levels of Logic = 3)
+  Source:            VGA640x480/countY_6 (FF)
+  Destination:       VGA_Vsync_n (PAD)
   Source Clock:      clk25_24/clkout0 rising
 
-  Data Path: DP_RAM/Mram_ram2 to VGA_R<3>
+  Data Path: VGA640x480/countY_6 to VGA_Vsync_n
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKB->DOB0    2   1.850   0.961  DP_RAM/Mram_ram2 (N7)
-     LUT6:I1->O            7   0.203   0.773  VGA640x480/Mmux_pixelOut11 (VGA_B_2_OBUF)
-     OBUF:I->O                 2.571          VGA_B_2_OBUF (VGA_B<2>)
+     FDRE:C->Q            14   0.361   0.571  VGA640x480/countY_6 (VGA640x480/countY_6)
+     LUT3:I0->O            1   0.097   0.379  VGA640x480/Vsync_n_SW0 (N8)
+     LUT6:I4->O            1   0.097   0.279  VGA640x480/Vsync_n (VGA_Vsync_n_OBUF)
+     OBUF:I->O                 0.000          VGA_Vsync_n_OBUF (VGA_Vsync_n)
     ----------------------------------------
-    Total                      6.358ns (4.624ns logic, 1.734ns route)
-                                       (72.7% logic, 27.3% route)
+    Total                      1.784ns (0.555ns logic, 1.229ns route)
+                                       (31.1% logic, 68.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.078ns (Levels of Logic = 1)
+Delay:               0.326ns (Levels of Logic = 1)
   Source:            rst (PAD)
   Destination:       clk25_24/mmcm_adv_inst:RST (PAD)
 
@@ -534,37 +634,53 @@ Delay:               2.078ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.222   0.856  rst_IBUF (rst_IBUF)
+     IBUF:I->O            11   0.001   0.326  rst_IBUF (rst_IBUF)
     MMCME2_ADV:RST             0.000          clk25_24/mmcm_adv_inst
     ----------------------------------------
-    Total                      2.078ns (1.222ns logic, 0.856ns route)
-                                       (58.8% logic, 41.2% route)
+    Total                      0.326ns (0.001ns logic, 0.326ns route)
+                                       (0.3% logic, 99.7% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock Pclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Pclk           |    1.906|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Pclk           |    1.217|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock clk25_24/clkout0
 ----------------+---------+---------+---------+---------+
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-clk25_24/clkout0|    7.309|         |         |         |
+clk25_24/clkout0|    2.219|         |         |         |
 ----------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.37 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.82 secs
  
 --> 
 
 
-Total memory usage is 390516 kilobytes
+Total memory usage is 512492 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   26 (   0 filtered)
-Number of infos    :   15 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

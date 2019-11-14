@@ -1,4 +1,5 @@
 verilog work "src/VGA_driver.v"
 verilog work "src/buffer_ram_dp.v"
+verilog work "Down_sampler.v"
 verilog work "clk24_25_nexys4.v"
 verilog work "src/test_cam.v"

@@ -1,0 +1,41 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc Nexys4.ucf -p xc7a100t-csg324-3 test_cam.ngc
+test_cam.ngd
+
+Reading NGO file
+"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/test_cam.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Nexys4.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clk50 = PERIOD "clk" 20 ns
+   HIGH 50%;> [Nexys4.ucf(2)]: Unable to find an active 'TNM' or 'TimeGrp'
+   constraint named 'clk'.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 462760 kilobytes
+
+Writing NGD file "test_cam.ngd" ...
+Total REAL time to NGDBUILD completion:  16 sec
+Total CPU time to NGDBUILD completion:   16 sec
+
+Writing NGDBUILD log file "test_cam.bld"...

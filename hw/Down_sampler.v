@@ -23,9 +23,9 @@ module Down_sampler(
 	input Href,
 	input VSync,
 	input Pclk,
-	output DP_RAM_regW,
+	output reg DP_RAM_regW,
 	output [14:0]DP_RAM_addr_in,
-	output [7:0]DP_RAM_data_in
+	output reg [7:0]DP_RAM_data_in
     );
 
 reg [7:0]d_latch;
@@ -45,7 +45,7 @@ hold_green<=3'd0;
 address<=15'd0;
 end
 
-//assign DP_RAM_addr_in<=address;
+assign DP_RAM_addr_in=address;
 
 always @(posedge Pclk)
 begin
@@ -55,7 +55,7 @@ DP_RAM_regW<=0;
 		href_last<=0;
 		cnt<=2'd0;
 		end else begin
-			if ((href_last==1)&(address != 14'b100101011111111))
+			if ((href_last==1)&(address != 15'b100101011111111))
 				begin
 				if (cnt==2'b11) begin
 					address<=address+1'b1;
@@ -65,9 +65,9 @@ DP_RAM_regW<=0;
 					end
 			end
 		end
-		dout <= {hold_red, hold_green, d_latch(4), dlatch(3)}; // d(4:3) is blue;
-		hold_green   <= {d_latch(7),d_latch(6),d_latch(5)};  
-      hold_red <= {d_latch(2),d_latch(1),d_latch(0)};
+		DP_RAM_data_in <= {hold_red,hold_green,d_latch[4:3]};//,dlatch[3]}; // d(4:3) is blue;
+		hold_green   <= {d_latch[7],d_latch[6],d_latch[5]};  
+      hold_red <= {d_latch[2],d_latch[1],d_latch[0]};
       d_latch <= data_bus;
          
       href_last <= Href;	

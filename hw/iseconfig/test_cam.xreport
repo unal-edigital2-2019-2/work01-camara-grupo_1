@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-11-13T00:58:51</DateModified>
+  <DateModified>2019-11-13T21:10:12</DateModified>
   <ModuleName>test_cam</ModuleName>
-  <SummaryTimeStamp>2019-11-10T10:31:57</SummaryTimeStamp>
+  <SummaryTimeStamp>2019-11-13T21:09:51</SummaryTimeStamp>
   <SavedFilePath>/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/iseconfig/test_cam.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/</ImplementationReportsDirectory>
   <DateInitialized>2019-11-10T10:32:44</DateInitialized>

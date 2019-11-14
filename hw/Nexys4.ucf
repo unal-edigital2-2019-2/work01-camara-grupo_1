@@ -1,0 +1,43 @@
+NET "clk" TNM_NET = clk50;
+TIMESPEC TS_clk50 = PERIOD "clk" 20 ns HIGH 50%;
+NET "clk"   LOC = "E3"; # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK, Sch name = GCLK0
+
+NET "CAM_pwdn"  LOC = "B13" | IOSTANDARD="LVCMOS33"; # JA0 #Bank = 15, Pin name = IO_L1N_T0_AD0N_15,
+NET "CAM_reset" LOC = "G13" | IOSTANDARD="LVCMOS33"; # JA4
+NET "data_bus<0>"  LOC = "F14" | IOSTANDARD="LVCMOS33"; # JA1
+NET "data_bus<1>"  LOC = "C17" | IOSTANDARD="LVCMOS33"; # JA5
+NET "data_bus<2>"  LOC = "D17" | IOSTANDARD="LVCMOS33"; # JA2
+NET "data_bus<3>"  LOC = "D18" | IOSTANDARD="LVCMOS33"; # JA6
+NET "data_bus<4>"  LOC = "E17" | IOSTANDARD="LVCMOS33"; # JA3
+NET "data_bus<5>"  LOC = "E18" | IOSTANDARD="LVCMOS33"; # JA7
+NET "data_bus<6>"  LOC = "G14" | IOSTANDARD="LVCMOS33"; # JB0
+NET "data_bus<7>"  LOC = "K16" | IOSTANDARD="LVCMOS33"; # JB4
+NET "Cam_xclk"  LOC = "P15" | IOSTANDARD="LVCMOS33"; # JB1
+NET "Pclk"  LOC = "R16" | IOSTANDARD="LVCMOS33"; # JB5
+NET "Href"  LOC = "V11" | IOSTANDARD="LVCMOS33"; # JB2
+NET "VSync" LOC = "T9" | IOSTANDARD="LVCMOS33"; # JB6
+#NET "OV7670_SIOD"  LOC = "V15" | IOSTANDARD="LVCMOS33"; # JB3
+#NET "OV7670_SIOC"  LOC = "U11" | IOSTANDARD="LVCMOS33"; # JB7
+NET "Pclk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#NET "Led<0>"  LOC = "T8" | IOSTANDARD="LVCMOS33" ; 
+#NET "Led<1>"  LOC = "V9" | IOSTANDARD="LVCMOS33" ; 
+#NET "Led<2>"  LOC = "R8" | IOSTANDARD="LVCMOS33"; 
+#NET "Led<3>"  LOC = "T6" | IOSTANDARD="LVCMOS33"; 
+#NET "Led<4>"  LOC = "T5" | IOSTANDARD="LVCMOS33"; 
+#NET "Led<5>"  LOC = "T4" | IOSTANDARD="LVCMOS33"; 
+#NET "Led<6>"  LOC = "U7"  | IOSTANDARD="LVCMOS33";  
+#NET "Led<7>"  LOC = "U6"  | IOSTANDARD="LVCMOS33";  
+
+NET "VGA_R<0>"   LOC = "A3";
+NET "VGA_R<1>"   LOC = "B4";
+NET "VGA_R<2>"   LOC = "C5";
+NET "VGA_G<0>" LOC = "C6";
+NET "VGA_G<1>" LOC = "A5";
+NET "VGA_G<2>" LOC = "B6";
+NET "VGA_B<1>"  LOC = "C7";
+NET "VGA_B<2>"  LOC = "D7";
+NET "VGA_Hsync_n"    LOC = "B11";
+NET "VGA_Vsync_n"    LOC = "B12" ;
+
+NET "rst" LOC = "E16" | IOSTANDARD="LVCMOS33";
