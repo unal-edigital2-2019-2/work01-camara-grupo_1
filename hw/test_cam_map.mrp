@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 13 22:01:55 2019
+Mapped Date    : Wed Nov 13 23:59:39 2019
 
 Interim Summary
 ---------------
@@ -57,7 +57,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        30 out of     210   14%
-    Number of LOCed IOBs:                       26 out of      30   86%
+    Number of LOCed IOBs:                       30 out of      30  100%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  8 out of     135    5%
@@ -98,7 +98,7 @@ Specific Feature Utilization:
 Design Summary
 --------------
 Number of errors   :   3
-Number of warnings :   5
+Number of warnings :   1
 
 Section 1 - Errors
 ------------------
@@ -146,21 +146,6 @@ ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 Section 2 - Warnings
 --------------------
 WARNING:LIT:701 - PAD symbol "clk" has an undefined IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "VGA_R<3>" is not constrained (LOC) to a specific
-   location.
-WARNING:Place:837 - Partially locked IO Bus is found. 
-    Following components of the bus are not locked: 
-   	 Comp: VGA_R<3>
-
-WARNING:Place:837 - Partially locked IO Bus is found. 
-    Following components of the bus are not locked: 
-   	 Comp: VGA_G<3>
-
-WARNING:Place:837 - Partially locked IO Bus is found. 
-    Following components of the bus are not locked: 
-   	 Comp: VGA_B<3>
-   	 Comp: VGA_B<0>
-
 
 Section 3 - Informational
 -------------------------
@@ -174,9 +159,6 @@ INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
    1.050 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 30 IOs, 26 are locked
-   and 4 are not locked. If you would like to print the names of these IOs,
-   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 
 Section 4 - Removed Logic Summary
 ---------------------------------

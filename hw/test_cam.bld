@@ -13,10 +13,6 @@ Done.
 Annotating constraints to design from ucf file "Nexys4.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clk50 = PERIOD "clk" 20 ns
-   HIGH 50%;> [Nexys4.ucf(2)]: Unable to find an active 'TNM' or 'TimeGrp'
-   constraint named 'clk'.
-
 Done...
 
 Checking expanded design ...
@@ -30,9 +26,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:   0
 
-Total memory usage is 462760 kilobytes
+Total memory usage is 462780 kilobytes
 
 Writing NGD file "test_cam.ngd" ...
 Total REAL time to NGDBUILD completion:  16 sec

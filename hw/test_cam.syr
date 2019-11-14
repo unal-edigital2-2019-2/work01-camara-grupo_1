@@ -5,7 +5,7 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Parameter xsthdpdir set to xst
@@ -73,7 +73,7 @@ LUT Combining                      : Auto
 Reduce Control Sets                : Auto
 Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
-Add Generic Clock Buffer(BUFG)     : 32
+Add Generic Clock Buffer(BUFG)     : 16
 Register Duplication               : YES
 Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
@@ -672,13 +672,13 @@ clk25_24/clkout0|    2.219|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 27.82 secs
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 26.55 secs
  
 --> 
 
 
-Total memory usage is 512492 kilobytes
+Total memory usage is 512496 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   24 (   0 filtered)

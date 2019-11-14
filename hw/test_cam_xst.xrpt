@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Nov 13 21:13:49 2019">
+  <application stringID="Xst" timeStamp="Wed Nov 13 23:02:46 2019">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -45,7 +45,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="AMD FX-7500 Radeon R7, 10 Compute Cores 4C+6G"/>
-          <item stringID="speed" value="1613.355 MHz"/>
+          <item stringID="speed" value="1651.100 MHz"/>
         </row>
       </table>
     </section>
@@ -90,7 +90,7 @@
       <item DEFAULT="Auto" label="-use_dsp48" stringID="XST_USEDSP48" value="Auto"/>
       <item DEFAULT="Yes" label="-iobuf" stringID="XST_IOBUF" value="YES"/>
       <item DEFAULT="100000" label="-max_fanout" stringID="XST_MAXFANOUT" value="100000"/>
-      <item DEFAULT="32" label="-bufg" stringID="XST_BUFG" value="32"/>
+      <item DEFAULT="32" label="-bufg" stringID="XST_BUFG" value="16"/>
       <item DEFAULT="Yes" label="-register_duplication" stringID="XST_REGISTERDUPLICATION" value="YES"/>
       <item DEFAULT="No" label="-register_balancing" stringID="XST_REGISTERBALANCING" value="No"/>
       <item DEFAULT="No" label="-optimize_primitives" stringID="XST_OPTIMIZEPRIMITIVES" value="NO"/>
