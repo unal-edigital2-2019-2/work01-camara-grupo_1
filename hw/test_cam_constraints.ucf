@@ -1,0 +1,37 @@
+NET "clk" LOC = "E3" ;
+NET "rst" LOC = "F15";
+ 
+NET "Href" LOC = "G13";
+NET "Vsync" LOC = "B13";
+NET "Pclk" LOC = "F14"; NET "Pclk" CLOCK_DEDICATED_ROUTE = FALSE; 
+
+NET "D[0]" LOC = "R16";
+NET "D[1]" LOC = "P15";
+NET "D[2]" LOC = "K16";
+NET "D[3]" LOC = "G14";
+NET "D[4]" LOC = "E18";
+NET "D[5]" LOC = "E17";
+NET "D[6]" LOC = "D18";
+NET "D[7]" LOC = "D17";
+
+NET "VGA_Hsync_n" LOC = "B11";
+NET "VGA_Vsync_n" LOC = "B12";
+
+NET "VGA_R[0]" LOC = "A3";
+NET "VGA_R[1]" LOC = "B4";
+NET "VGA_R[2]" LOC = "C5";
+NET "VGA_R[3]" LOC = "A4";
+
+NET "VGA_G[0]" LOC = "C6";
+NET "VGA_G[1]" LOC = "A5";
+NET "VGA_G[2]" LOC = "B6";
+NET "VGA_G[3]" LOC = "A6";
+
+NET "VGA_B[0]" LOC = "B7";
+NET "VGA_B[1]" LOC = "C7";
+NET "VGA_B[2]" LOC = "D7";
+NET "VGA_B[3]" LOC = "B8";
+
+NET "CAM_xclk" LOC = "C17";
+NET "CAM_pwdn" LOC = "T9";
+NET "CAM_reset" LOC = "V11";

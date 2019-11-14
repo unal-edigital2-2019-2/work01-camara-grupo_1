@@ -49,7 +49,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "test_cam"
 Output Format                      : NGC
-Target Device                      : xc6slx9-3-tqg144
+Target Device                      : xc7a100t-3-csg324
 
 ---- Source Options
 Top Module Name                    : test_cam
@@ -158,7 +158,7 @@ WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digita
 Elaborating module <Captura_de_datos>.
 WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/Captura_de_datos.v" Line 66: Result of 16-bit expression is truncated to fit in 15-bit target.
 WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/Captura_de_datos.v" Line 67: Result of 16-bit expression is truncated to fit in 15-bit target.
-WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 164: Result of 17-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 165: Result of 17-bit expression is truncated to fit in 15-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -169,10 +169,10 @@ Synthesizing Unit <test_cam>.
         CAM_SCREEN_X = 160
         CAM_SCREEN_Y = 120
 INFO:Xst:3210 - "/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" line 107: Output port <LOCKED> of the instance <clk25_24> is unconnected or connected to loadless signal.
-    Found 16-bit adder for signal <n0023> created at line 164.
-    Found 9x7-bit multiplier for signal <n0029> created at line 164.
-    Found 10-bit comparator greater for signal <GND_1_o_VGA_posX[9]_LessThan_4_o> created at line 161
-    Found 9-bit comparator greater for signal <GND_1_o_VGA_posY[8]_LessThan_5_o> created at line 161
+    Found 16-bit adder for signal <n0023> created at line 165.
+    Found 9x7-bit multiplier for signal <n0029> created at line 165.
+    Found 10-bit comparator greater for signal <GND_1_o_VGA_posX[9]_LessThan_4_o> created at line 162
+    Found 9-bit comparator greater for signal <GND_1_o_VGA_posY[8]_LessThan_5_o> created at line 162
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
@@ -357,7 +357,7 @@ Optimizing unit <VGA_Driver640x480> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block test_cam, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block test_cam, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -365,8 +365,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 60
- Flip-Flops                                            : 60
+# Registers                                            : 59
+ Flip-Flops                                            : 59
 
 =========================================================================
 
@@ -389,24 +389,25 @@ Top Level Output File Name         : test_cam.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 189
+# BELS                             : 272
 #      GND                         : 1
 #      INV                         : 4
-#      LUT1                        : 45
-#      LUT2                        : 19
-#      LUT3                        : 11
-#      LUT5                        : 1
-#      LUT6                        : 13
-#      MUXCY                       : 45
+#      LUT1                        : 49
+#      LUT2                        : 33
+#      LUT3                        : 13
+#      LUT4                        : 12
+#      LUT5                        : 10
+#      LUT6                        : 11
+#      MUXCY                       : 66
 #      VCC                         : 1
-#      XORCY                       : 49
-# FlipFlops/Latches                : 60
-#      FD                          : 3
+#      XORCY                       : 72
+# FlipFlops/Latches                : 59
+#      FD                          : 7
 #      FDE                         : 38
-#      FDR                         : 10
+#      FDR                         : 5
 #      FDRE                        : 9
-# RAMS                             : 16
-#      RAMB16BWER                  : 16
+# RAMS                             : 8
+#      RAMB36E1                    : 8
 # Clock Buffers                    : 5
 #      BUFG                        : 4
 #      BUFGP                       : 1
@@ -414,38 +415,35 @@ Primitive and Black Box Usage:
 #      IBUF                        : 10
 #      IBUFG                       : 1
 #      OBUF                        : 17
-# DSPs                             : 1
-#      DSP48A1                     : 1
 # Others                           : 1
 #      MMCME2_ADV                  : 1
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx9tqg144-3 
+Selected Device : 7a100tcsg324-3 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              60  out of  11440     0%  
- Number of Slice LUTs:                   93  out of   5720     1%  
-    Number used as Logic:                93  out of   5720     1%  
+ Number of Slice Registers:              59  out of  126800     0%  
+ Number of Slice LUTs:                  132  out of  63400     0%  
+    Number used as Logic:               132  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    102
-   Number with an unused Flip Flop:      42  out of    102    41%  
-   Number with an unused LUT:             9  out of    102     8%  
-   Number of fully used LUT-FF pairs:    51  out of    102    50%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    132
+   Number with an unused Flip Flop:      73  out of    132    55%  
+   Number with an unused LUT:             0  out of    132     0%  
+   Number of fully used LUT-FF pairs:    59  out of    132    44%  
+   Number of unique control sets:         7
 
 IO Utilization: 
  Number of IOs:                          30
- Number of bonded IOBs:                  29  out of    102    28%  
+ Number of bonded IOBs:                  29  out of    210    13%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               16  out of     32    50%  
-    Number using Block RAM only:         16
- Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
- Number of DSP48A1s:                      1  out of     16     6%  
+ Number of Block RAM/FIFO:                8  out of    135     5%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
 
 ---------------------------
 Partition Resource Summary:
@@ -469,8 +467,8 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 Pclk                               | BUFGP                  | 40    |
-clk25_24/clkout0                   | BUFG                   | 37    |
-clk                                | IBUFG                  | 16    |
+clk25_24/clkout0                   | BUFG                   | 27    |
+clk                                | IBUFG                  | 8     |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -481,10 +479,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.662ns (Maximum Frequency: 130.510MHz)
-   Minimum input arrival time before clock: 3.779ns
-   Maximum output required time after clock: 6.127ns
-   Maximum combinational path delay: 2.078ns
+   Minimum period: 2.219ns (Maximum Frequency: 450.735MHz)
+   Minimum input arrival time before clock: 1.503ns
+   Maximum output required time after clock: 1.784ns
+   Maximum combinational path delay: 0.326ns
 
 Timing Details:
 ---------------
@@ -492,114 +490,130 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Pclk'
-  Clock period: 3.336ns (frequency: 299.767MHz)
+  Clock period: 1.788ns (frequency: 559.441MHz)
   Total number of paths / destination ports: 288 / 70
 -------------------------------------------------------------------------
-Delay:               3.336ns (Levels of Logic = 1)
-  Source:            Captura_de_datos/countData (FF)
-  Destination:       Captura_de_datos/addr_0 (FF)
+Delay:               1.788ns (Levels of Logic = 16)
+  Source:            Captura_de_datos/address_0 (FF)
+  Destination:       Captura_de_datos/addr_14 (FF)
   Source Clock:      Pclk rising
   Destination Clock: Pclk rising
 
-  Data Path: Captura_de_datos/countData to Captura_de_datos/addr_0
+  Data Path: Captura_de_datos/address_0 to Captura_de_datos/addr_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  Captura_de_datos/countData (Captura_de_datos/countData)
-     LUT3:I0->O           31   0.205   1.277  Captura_de_datos/_n0069_inv1 (Captura_de_datos/_n0069_inv)
-     FDE:CE                    0.322          Captura_de_datos/addr_0
+     FDE:C->Q              2   0.361   0.283  Captura_de_datos/address_0 (Captura_de_datos/address_0)
+     INV:I->O              1   0.113   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_lut<0>_INV_0 (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<0> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<1> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<2> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<3> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<4> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<5> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<6> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<7> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<8> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<9> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<10> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<11> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<12> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<12>)
+     MUXCY:CI->O           0   0.023   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<13> (Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_cy<13>)
+     XORCY:CI->O           1   0.370   0.000  Captura_de_datos/Madd_address[14]_GND_7_o_add_3_OUT_xor<14> (Captura_de_datos/address[14]_GND_7_o_add_3_OUT<14>)
+     FDE:D                     0.008          Captura_de_datos/addr_14
     ----------------------------------------
-    Total                      3.336ns (0.974ns logic, 2.362ns route)
-                                       (29.2% logic, 70.8% route)
+    Total                      1.788ns (1.504ns logic, 0.283ns route)
+                                       (84.1% logic, 15.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk25_24/clkout0'
-  Clock period: 7.662ns (frequency: 130.510MHz)
-  Total number of paths / destination ports: 5080 / 274
+  Clock period: 2.219ns (frequency: 450.735MHz)
+  Total number of paths / destination ports: 290 / 32
 -------------------------------------------------------------------------
-Delay:               7.662ns (Levels of Logic = 2)
-  Source:            VGA640x480/countY_8 (FF)
-  Destination:       DP_RAM/Mram_ram1 (RAM)
+Delay:               2.219ns (Levels of Logic = 2)
+  Source:            VGA640x480/countX_3 (FF)
+  Destination:       VGA640x480/countX_8 (FF)
   Source Clock:      clk25_24/clkout0 rising
   Destination Clock: clk25_24/clkout0 rising
 
-  Data Path: VGA640x480/countY_8 to DP_RAM/Mram_ram1
+  Data Path: VGA640x480/countX_3 to VGA640x480/countX_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   0.447   0.683  VGA640x480/countY_8 (VGA640x480/countY_8)
-     DSP48A1:B8->P13       1   4.394   0.580  Maddsub_n0029 (n0023<13>)
-     LUT2:I1->O           16   0.205   1.004  Mmux_DP_RAM_addr_out51 (DP_RAM_addr_out<13>)
-     RAMB16BWER:ADDRB13        0.350          DP_RAM/Mram_ram1
+     FD:C->Q               3   0.361   0.693  VGA640x480/countX_3 (VGA640x480/countX_3)
+     LUT5:I0->O            3   0.097   0.305  VGA640x480/Mcount_countX_val21 (VGA640x480/Mcount_countX_val21)
+     LUT6:I5->O            9   0.097   0.316  VGA640x480/Mcount_countX_val1 (VGA640x480/Mcount_countX_val)
+     FDR:R                     0.349          VGA640x480/countX_9
     ----------------------------------------
-    Total                      7.662ns (5.396ns logic, 2.266ns route)
-                                       (70.4% logic, 29.6% route)
+    Total                      2.219ns (0.904ns logic, 1.315ns route)
+                                       (40.7% logic, 59.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Pclk'
-  Total number of paths / destination ports: 88 / 48
+  Total number of paths / destination ports: 88 / 49
 -------------------------------------------------------------------------
-Offset:              3.779ns (Levels of Logic = 2)
-  Source:            Href (PAD)
+Offset:              0.972ns (Levels of Logic = 2)
+  Source:            Vsync (PAD)
   Destination:       Captura_de_datos/addr_0 (FF)
   Destination Clock: Pclk rising
 
-  Data Path: Href to Captura_de_datos/addr_0
+  Data Path: Vsync to Captura_de_datos/addr_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.755  Href_IBUF (Href_IBUF)
-     LUT3:I1->O           31   0.203   1.277  Captura_de_datos/_n0069_inv1 (Captura_de_datos/_n0069_inv)
-     FDE:CE                    0.322          Captura_de_datos/addr_0
+     IBUF:I->O             4   0.001   0.393  Vsync_IBUF (Captura_de_datos/state_inv)
+     LUT3:I1->O           30   0.097   0.386  Captura_de_datos/_n0069_inv1 (Captura_de_datos/_n0069_inv)
+     FDE:CE                    0.095          Captura_de_datos/addr_0
     ----------------------------------------
-    Total                      3.779ns (1.747ns logic, 2.032ns route)
-                                       (46.2% logic, 53.8% route)
+    Total                      0.972ns (0.193ns logic, 0.779ns route)
+                                       (19.9% logic, 80.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk25_24/clkout0'
-  Total number of paths / destination ports: 20 / 20
+  Total number of paths / destination ports: 19 / 19
 -------------------------------------------------------------------------
-Offset:              3.698ns (Levels of Logic = 2)
+Offset:              1.503ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       VGA640x480/countX_0 (FF)
+  Destination:       VGA640x480/countX_8 (FF)
   Destination Clock: clk25_24/clkout0 rising
 
-  Data Path: rst to VGA640x480/countX_0
+  Data Path: rst to VGA640x480/countX_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.222   0.961  rst_IBUF (rst_IBUF)
-     LUT2:I0->O           11   0.203   0.882  VGA640x480/Mcount_countX_val1 (VGA640x480/Mcount_countX_val)
-     FDR:R                     0.430          VGA640x480/countX_0
+     IBUF:I->O            11   0.001   0.740  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            9   0.097   0.316  VGA640x480/Mcount_countX_val1 (VGA640x480/Mcount_countX_val)
+     FDR:R                     0.349          VGA640x480/countX_9
     ----------------------------------------
-    Total                      3.698ns (1.855ns logic, 1.843ns route)
-                                       (50.2% logic, 49.8% route)
+    Total                      1.503ns (0.447ns logic, 1.056ns route)
+                                       (29.7% logic, 70.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk25_24/clkout0'
-  Total number of paths / destination ports: 62 / 10
+  Total number of paths / destination ports: 38 / 10
 -------------------------------------------------------------------------
-Offset:              6.127ns (Levels of Logic = 2)
-  Source:            DP_RAM/Mram_ram16 (RAM)
-  Destination:       VGA_R<3> (PAD)
+Offset:              1.784ns (Levels of Logic = 3)
+  Source:            VGA640x480/countY_6 (FF)
+  Destination:       VGA_Vsync_n (PAD)
   Source Clock:      clk25_24/clkout0 rising
 
-  Data Path: DP_RAM/Mram_ram16 to VGA_R<3>
+  Data Path: VGA640x480/countY_6 to VGA_Vsync_n
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKB->DOB0    1   1.850   0.924  DP_RAM/Mram_ram16 (N35)
-     LUT6:I1->O            1   0.203   0.579  VGA640x480/Mmux_pixelOut81 (VGA_R_3_OBUF)
-     OBUF:I->O                 2.571          VGA_R_3_OBUF (VGA_R<3>)
+     FDRE:C->Q            14   0.361   0.571  VGA640x480/countY_6 (VGA640x480/countY_6)
+     LUT3:I0->O            1   0.097   0.379  VGA640x480/Vsync_n_SW0 (N10)
+     LUT6:I4->O            1   0.097   0.279  VGA640x480/Vsync_n (VGA_Vsync_n_OBUF)
+     OBUF:I->O                 0.000          VGA_Vsync_n_OBUF (VGA_Vsync_n)
     ----------------------------------------
-    Total                      6.127ns (4.624ns logic, 1.503ns route)
-                                       (75.5% logic, 24.5% route)
+    Total                      1.784ns (0.555ns logic, 1.229ns route)
+                                       (31.1% logic, 68.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.078ns (Levels of Logic = 1)
+Delay:               0.326ns (Levels of Logic = 1)
   Source:            rst (PAD)
   Destination:       clk25_24/mmcm_adv_inst:RST (PAD)
 
@@ -607,11 +621,11 @@ Delay:               2.078ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.222   0.856  rst_IBUF (rst_IBUF)
+     IBUF:I->O            11   0.001   0.326  rst_IBUF (rst_IBUF)
     MMCME2_ADV:RST             0.000          clk25_24/mmcm_adv_inst
     ----------------------------------------
-    Total                      2.078ns (1.222ns logic, 0.856ns route)
-                                       (58.8% logic, 41.2% route)
+    Total                      0.326ns (0.001ns logic, 0.326ns route)
+                                       (0.3% logic, 99.7% route)
 
 =========================================================================
 
@@ -623,7 +637,7 @@ Clock to Setup on destination clock Pclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Pclk           |    3.336|         |         |         |
+Pclk           |    1.788|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -631,7 +645,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Pclk           |    2.962|         |         |         |
+Pclk           |    1.222|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk25_24/clkout0
@@ -639,19 +653,19 @@ Clock to Setup on destination clock clk25_24/clkout0
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-clk25_24/clkout0|    7.662|         |         |         |
+clk25_24/clkout0|    2.219|         |         |         |
 ----------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.52 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.68 secs
  
 --> 
 
 
-Total memory usage is 392564 kilobytes
+Total memory usage is 505624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   23 (   0 filtered)

@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module test_cam(
-    input wire clk,           // board clock: 32 MHz 
+    input  clk,           // board clock: 32 MHz 
     input wire rst,         	// reset button
 	 input wire Href,
 	 input wire Vsync,

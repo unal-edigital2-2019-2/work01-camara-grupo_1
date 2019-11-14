@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/test_cam.ncd
+OUTFILE=/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/test_cam.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw
+LICENSE=WebPack
+USER_INFO=210656542_0_0_533

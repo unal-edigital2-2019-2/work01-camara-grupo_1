@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-11-10T10:48:34</DateModified>
-  <ModuleName>Captura_de_datos</ModuleName>
+  <DateModified>2019-11-14T16:09:46</DateModified>
+  <ModuleName>test_cam</ModuleName>
   <SummaryTimeStamp>2019-11-10T10:31:57</SummaryTimeStamp>
   <SavedFilePath>/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/iseconfig/test_cam.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/</ImplementationReportsDirectory>
