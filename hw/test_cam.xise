@@ -16,7 +16,11 @@
 
   <files>
     <file xil_pn:name="src/test_cam.v" xil_pn:type="FILE_VERILOG">
+<<<<<<< HEAD
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
+=======
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+>>>>>>> e7359c292b078bb51b932f6bee3875d08938c2bb
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
     <file xil_pn:name="src/buffer_ram_dp.v" xil_pn:type="FILE_VERILOG">
@@ -32,6 +36,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="clk24_25_nexys4.v" xil_pn:type="FILE_VERILOG">
+<<<<<<< HEAD
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
@@ -46,6 +51,16 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="42"/>
     </file>
     <file xil_pn:name="test_cam_constraints.ucf" xil_pn:type="FILE_UCF">
+=======
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+    </file>
+    <file xil_pn:name="Down_sampler.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="30"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+    </file>
+    <file xil_pn:name="Nexys4.ucf" xil_pn:type="FILE_UCF">
+>>>>>>> e7359c292b078bb51b932f6bee3875d08938c2bb
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>
@@ -209,7 +224,11 @@
     <property xil_pn:name="Optimization Effort virtex6" xil_pn:value="Normal" xil_pn:valueState="default"/>
     <property xil_pn:name="Optimization Goal" xil_pn:value="Speed" xil_pn:valueState="default"/>
     <property xil_pn:name="Optimize Instantiated Primitives" xil_pn:value="false" xil_pn:valueState="default"/>
+<<<<<<< HEAD
     <property xil_pn:name="Other Bitgen Command Line Options" xil_pn:value="-g UnconstrainedPins:Allow" xil_pn:valueState="non-default"/>
+=======
+    <property xil_pn:name="Other Bitgen Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
+>>>>>>> e7359c292b078bb51b932f6bee3875d08938c2bb
     <property xil_pn:name="Other Compiler Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Compiler Options Map" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Compiler Options Par" xil_pn:value="" xil_pn:valueState="default"/>
@@ -318,7 +337,11 @@
     <property xil_pn:name="Starting Placer Cost Table (1-100)" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
     <property xil_pn:name="Target Simulator" xil_pn:value="Please Specify" xil_pn:valueState="default"/>
+<<<<<<< HEAD
     <property xil_pn:name="Target UCF File Name" xil_pn:value="test_cam_constraints.ucf" xil_pn:valueState="non-default"/>
+=======
+    <property xil_pn:name="Target UCF File Name" xil_pn:value="Nexys4.ucf" xil_pn:valueState="non-default"/>
+>>>>>>> e7359c292b078bb51b932f6bee3875d08938c2bb
     <property xil_pn:name="Timing Mode Map" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
     <property xil_pn:name="Timing Mode Par" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
     <property xil_pn:name="Top-Level Module Name in Output Netlist" xil_pn:value="" xil_pn:valueState="default"/>
@@ -379,7 +402,11 @@
   </properties>
 
   <bindings>
+<<<<<<< HEAD
     <binding xil_pn:location="/test_cam" xil_pn:name="test_cam_constraints.ucf"/>
+=======
+    <binding xil_pn:location="/test_cam" xil_pn:name="Nexys4.ucf"/>
+>>>>>>> e7359c292b078bb51b932f6bee3875d08938c2bb
   </bindings>
 
   <libraries/>

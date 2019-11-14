@@ -5,54 +5,59 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<<<<<<< HEAD
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/test_cam.v" Line 106: Port <arg fmt="%s" index="1">LOCKED</arg> is not connected to this instance
+=======
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v" Line 120: Port <arg fmt="%s" index="1">LOCKED</arg> is not connected to this instance
+>>>>>>> e7359c292b078bb51b932f6bee3875d08938c2bb
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 132: Assignment to <arg fmt="%s" index="1">clkfboutb_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 132: Assignment to <arg fmt="%s" index="1">clkfboutb_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 134: Assignment to <arg fmt="%s" index="1">clkout0b_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 134: Assignment to <arg fmt="%s" index="1">clkout0b_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 136: Assignment to <arg fmt="%s" index="1">clkout1b_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 136: Assignment to <arg fmt="%s" index="1">clkout1b_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 137: Assignment to <arg fmt="%s" index="1">clkout2_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 137: Assignment to <arg fmt="%s" index="1">clkout2_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 138: Assignment to <arg fmt="%s" index="1">clkout2b_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 138: Assignment to <arg fmt="%s" index="1">clkout2b_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 139: Assignment to <arg fmt="%s" index="1">clkout3_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 139: Assignment to <arg fmt="%s" index="1">clkout3_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 140: Assignment to <arg fmt="%s" index="1">clkout3b_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 140: Assignment to <arg fmt="%s" index="1">clkout3b_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 141: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 141: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 142: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 142: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 143: Assignment to <arg fmt="%s" index="1">clkout6_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 143: Assignment to <arg fmt="%s" index="1">clkout6_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 155: Assignment to <arg fmt="%s" index="1">do_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 155: Assignment to <arg fmt="%s" index="1">do_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 156: Assignment to <arg fmt="%s" index="1">drdy_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 156: Assignment to <arg fmt="%s" index="1">drdy_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 162: Assignment to <arg fmt="%s" index="1">psdone_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 162: Assignment to <arg fmt="%s" index="1">psdone_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 165: Assignment to <arg fmt="%s" index="1">clkinstopped_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 165: Assignment to <arg fmt="%s" index="1">clkinstopped_unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 166: Assignment to <arg fmt="%s" index="1">clkfbstopped_unused</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v" Line 166: Assignment to <arg fmt="%s" index="1">clkfbstopped_unused</arg> ignored, since the identifier is never used
 </msg>
 
+<<<<<<< HEAD
 <msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/jhonathann/Escritorio/Digital 2/Proyecto digital 2/work01-camara-grupo_1/hw/src/buffer_ram_dp.v" Line 53: Signal &lt;<arg fmt="%s" index="1">ram</arg>&gt; in initial block is partially initialized.
 </msg>
 
@@ -123,6 +128,39 @@
 </msg>
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">DP_RAM/Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+=======
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/buffer_ram_dp.v" Line 53: Signal &lt;<arg fmt="%s" index="1">ram</arg>&gt; in initial block is partially initialized.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/VGA_driver.v" Line 68: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/VGA_driver.v" Line 72: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v" Line 173: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v</arg>&quot; line <arg fmt="%s" index="2">121</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clk25_24</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">DP_RAM_regW</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Down_sampler</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Down_sampler_mod/cnt_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">test_cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Down_sampler_mod/cnt_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">test_cam</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">Down_sampler_mod/href_last</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">test_cam</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Down_sampler_mod/address_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">test_cam</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">14 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Down_sampler_mod/address_13&gt; &lt;Down_sampler_mod/address_12&gt; &lt;Down_sampler_mod/address_11&gt; &lt;Down_sampler_mod/address_10&gt; &lt;Down_sampler_mod/address_9&gt; &lt;Down_sampler_mod/address_8&gt; &lt;Down_sampler_mod/address_7&gt; &lt;Down_sampler_mod/address_6&gt; &lt;Down_sampler_mod/address_5&gt; &lt;Down_sampler_mod/address_4&gt; &lt;Down_sampler_mod/address_3&gt; &lt;Down_sampler_mod/address_2&gt; &lt;Down_sampler_mod/address_1&gt; &lt;Down_sampler_mod/address_0&gt; </arg>
+</msg>
+>>>>>>> e7359c292b078bb51b932f6bee3875d08938c2bb
 
 </messages>
 

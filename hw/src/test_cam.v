@@ -35,10 +35,14 @@ module test_cam(
 	
 	//CAMARA input/output
 	
-	output wire CAM_xclk,		// System  clock imput
+	output wire CAM_xclk,		// System  clock input
 	output wire CAM_pwdn,		// power down mode 
-	output wire CAM_reset		// clear all registers of cam
+	output wire CAM_reset,		// clear all registers of cam
 	// colocar aqui las entras  y salidas de la camara 
+	input [7:0]data_bus,
+	input Href,
+	input VSync,
+	input Pclk
 
 );
 
@@ -94,6 +98,20 @@ assign CAM_pwdn=  0;			// power down mode
 assign CAM_reset=  0;
 
 
+/* ****************************************************************************
+Down_sampler
+**************************************************************************** */
+Down_sampler
+	Down_sampler_mod(
+	.data_bus(data_bus),             //Bus de datos de la cámara
+	.Href(Href),                     //Señal Href de la cámara
+	.VSync(VSync),                   // Señal VSync de la cámara
+	.Pclk(Pclk),                     //Reloj de sincronización Pclk
+	.DP_RAM_regW(DP_RAM_regW),       //Señal de enable de escritura a la RAM
+	.DP_RAM_addr_in(DP_RAM_addr_in), //Señal de address de acceso a la RAM
+	.DP_RAM_data_in(DP_RAM_data_in)  //Bus de datos para escribir en la RAM
+
+);
 
 /* ****************************************************************************
   Este bloque se debe modificar según sea le caso. El ejemplo esta dado para
