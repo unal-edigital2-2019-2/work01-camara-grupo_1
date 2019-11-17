@@ -8,5 +8,23 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/Down_sampler.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/clk24_25_nexys4.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/PLL/clk_32MHZ_to_25M_24M.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/VGA_driver.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/buffer_ram_dp.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/daniel/Documents/Digital/work01-camara-grupo_1/hw/src/test_cam.v&quot; into library work</arg>
+</msg>
+
 </messages>
 

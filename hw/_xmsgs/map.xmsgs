@@ -23,7 +23,7 @@
 <msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
-<msg type="error" file="Place" num="864" delta="new" >Incompatible IOB&apos;s are locked to the same bank <arg fmt="%d" index="1">15</arg>
+<msg type="error" file="Place" num="864" delta="old" >Incompatible IOB&apos;s are locked to the same bank <arg fmt="%d" index="1">15</arg>
 Conflicting IO Standards are:
 IO Standard 1: <arg fmt="%s" index="2">Name = LVCMOS33, VREF = NR, VCCO = 3.30, TERM = NONE, DIR = OUTPUT, DRIVE_STR = 12
 </arg><arg fmt="%s" index="3">List of locked IOB&apos;s:
@@ -39,7 +39,7 @@ IO Standard 1: <arg fmt="%s" index="2">Name = LVCMOS33, VREF = NR, VCCO = 3.30, 
 </arg>
 </msg>
 
-<msg type="error" file="Place" num="864" delta="new" >Incompatible IOB&apos;s are locked to the same bank <arg fmt="%d" index="1">15</arg>
+<msg type="error" file="Place" num="864" delta="old" >Incompatible IOB&apos;s are locked to the same bank <arg fmt="%d" index="1">15</arg>
 Conflicting IO Standards are:
 IO Standard 1: <arg fmt="%s" index="2">Name = LVCMOS18, VREF = NR, VCCO = 1.80, TERM = NONE, DIR = OUTPUT, DRIVE_STR = 12
 </arg><arg fmt="%s" index="3">List of locked IOB&apos;s:

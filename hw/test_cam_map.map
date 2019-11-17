@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 13 23:59:39 2019
+Mapped Date    : Thu Nov 14 16:10:41 2019
 
 WARNING:LIT:701 - PAD symbol "clk" has an undefined IOSTANDARD.
 Mapping design into LUTs...
@@ -20,11 +20,11 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 54 secs 
+Total REAL time at the beginning of Placer: 59 secs 
 Total CPU  time at the beginning of Placer: 54 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:f352c0f5) REAL time: 58 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f352c0f5) REAL time: 1 mins 4 secs 
 
 Phase 2.7  Design Feasibility Check
 ERROR:Place:864 - Incompatible IOB's are locked to the same bank 15
@@ -66,9 +66,9 @@ ERROR:Place:864 - Incompatible IOB's are locked to the same bank 15
 
    These IO Standards are incompatible due to VCCO mismatch.
 
-Phase 2.7  Design Feasibility Check (Checksum:f352c0f5) REAL time: 58 secs 
+Phase 2.7  Design Feasibility Check (Checksum:f352c0f5) REAL time: 1 mins 4 secs 
 
-Total REAL time to Placer completion: 58 secs 
+Total REAL time to Placer completion: 1 mins 4 secs 
 Total CPU  time to Placer completion: 58 secs 
 ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 
