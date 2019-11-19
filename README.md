@@ -80,4 +80,4 @@ Al culminar los hitos anteriores deben:
 
 ![DIAGRAMA](./docs/figs/First_test.png)
 
-[![VIDEO](https://img.youtube.com/vi/<iframe width="669" height="368" src="https://www.youtube.com/embed/YhkbONNSTbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>/0.jpg)](https://youtu.be/YhkbONNSTbM)
+[![Watch the video](https://img.youtube.com/vi/<iframe width="669" height="368" src="https://www.youtube.com/embed/YhkbONNSTbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>/hqdefault.jpg)](https://youtu.be/YhkbONNSTbM)
