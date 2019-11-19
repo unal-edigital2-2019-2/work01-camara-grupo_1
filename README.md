@@ -90,6 +90,22 @@ Otro conexión clave para el funcionamiento del módulo diseñado es la de la se
 
 El archivo `Nexys4.ucf` contiene todas estas condiciones mencionadas anteriormente, por lo que si se desea analizar en mas detalles cada uno de los pines utilizados se puede conseguir en la carpeta `/hw/`.
 
+### PLL
+
+Un bucle de enganche de fase o *phase-locked loop* por sus siglas en ingles es un circuito electrónico que para propositos de este proyecto nos permite generar señales de reloj a distintas frecuencias a partir de la señal del `clk`principal proporcionado por la FPGA.
+
+Utilizando el *wizard* incluido en el kit de desarrollo Xilinx ISE, se creo un módulo PLL el cual recibe la señal del reloj interno a 32MHz y la convierte en una de 25MHz y otra de 24MHz. Esto es fundamental para el correcto funcionamiento del proyecto ya que se estableció relojes a dichas frecuencias para distintos módulos, los cuales se describen a continuación:
+
+
+Módulo | Frecuencia del reloj
+------ | --------------------
+Control de la camara (`test_cam`) | 24 Mhz 
+DP_RAM (`buffer_ram_dp.v`) | 25MHz
+VGA 640x480 (`VGA_Driver.v`) | 25MHz
+
+El archivo `clk24_25_nexys4.v` contiene todas estas condiciones mencionadas anteriormente, por lo que si se desea analizar en mas detalles su funcionamiento se puede conseguir en la carpeta `/hw/`.
+
+
 ## Resultados de la implementación
 
 A continuación se presentan los resultados obtenidos de la implementación del proyecto en relación con los hitos previamente definidos.
