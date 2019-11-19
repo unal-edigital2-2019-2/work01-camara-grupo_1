@@ -78,6 +78,7 @@ Al culminar los hitos anteriores deben:
 
 ***RECUEDE: Es necesario documentar la implementación y registrar la información en README.md, lo puede hacer con ayuda de imágenes o videos***
 
+
 ### UCF
 
 Un aspecto fundamental a la hora de implementar el módulo de control de la camara es la conexión de nuestras entradas y salidas a los pines correspondientes en la tableta programable FPGA. En nuestro caso en particular se eligió utilizar una Nexys 4 y se procedió a crear un archivo UCF que nos permitieran definir los pines internos a utilizar y sus conexiones con el módulo diseñado. Para esto se utilizó como plantilla el **UCF** proporcionado por el fabricante, y modificando solo los parámetros de interés, los cuales incluyen: 
@@ -89,10 +90,19 @@ Otro conexión clave para el funcionamiento del módulo diseñado es la de la se
 
 El archivo `Nexys4.ucf` contiene todas estas condiciones mencionadas anteriormente, por lo que si se desea analizar en mas detalles cada uno de los pines utilizados se puede conseguir en la carpeta `/hw/`.
 
+## Resultados de la implementación
+
+A continuación se presentan los resultados obtenidos de la implementación del proyecto en relación con los hitos previamente definidos.
+
+En primer lugar se implementaron los módulos Captura_de_datos.vy clk24_25_nexys4.v dentro del proyecto dado al instanciarles en el módulo principal test_cam.v y conectarles con los módulos VGA_Driver.v y buffer_ram_dp.v, respectivamente.
+
 ![DIAGRAMA](./docs/figs/First_test.png)
+
 
 [![Watch the video](https://img.youtube.com/vi/YhkbONNSTbM/hqdefault.jpg)](https://youtu.be/YhkbONNSTbM)
 
 ![DIAGRAMA](./docs/figs/Href_Pclk.png)
 
 ![DIAGRAMA](./docs/figs/Href_Vsync.png)
+
+En el osciloscopio se observan las señales Vsync (Azul) y Href (Amarillo). De acuerdo a lo que se tiene en la gráfica de funcionamiento de la cámara, cada ciclo de Vsync debe corresponder a 144 ciclos de Href para que se consideren válidos los datos que se están recibiendo. Cabe resaltar que estos 144 ciclos coinciden con el número de filas que contiene la imagen que se está tomando con el sensor de la cámara
