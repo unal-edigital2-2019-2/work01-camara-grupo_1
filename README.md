@@ -79,3 +79,5 @@ Al culminar los hitos anteriores deben:
 ***RECUEDE: Es necesario documentar la implementación y registrar la información en README.md, lo puede hacer con ayuda de imágenes o videos***
 
 ![DIAGRAMA](./docs/figs/First_test.png)
+
+[![VIDEO](https://img.youtube.com/vi/<iframe width="669" height="368" src="https://www.youtube.com/embed/YhkbONNSTbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>/0.jpg)](https://youtu.be/YhkbONNSTbM)
