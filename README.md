@@ -106,4 +106,4 @@ Se visualizan las señales de Href (azul) y Pclk (amarillo), en el osciloscopio 
 
 ![DIAGRAMA](./docs/figs/Href_Vsync.png)
 
-En el osciloscopio se observan las señales Vsync (Azul) y Href (Amarillo). De acuerdo a lo que se tiene en la gráfica de funcionamiento de la cámara, cada ciclo de Vsync debe corresponder a 144 ciclos de Href para que se consideren válidos los datos que se están recibiendo. Cabe resaltar que estos 144 ciclos coinciden con el número de filas que contiene la imagen que se está tomando con el sensor de la cámara
+En el osciloscopio se observan las señales Vsync (Azul) y Href (Amarillo). De acuerdo a lo que se tiene en la gráfica de funcionamiento de la cámara, cada ciclo de Vsync debe corresponder a 144 ciclos de Href para que se consideren válidos los datos que se están recibiendo. Cabe resaltar que estos 144 ciclos coinciden con el número de filas que contiene la imagen que se está tomando con el sensor de la cámara 
