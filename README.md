@@ -90,6 +90,7 @@ En primer lugar se implementaron los módulos Captura_de_datos.vy clk24_25_nexys
 [![Watch the video](https://img.youtube.com/vi/YhkbONNSTbM/hqdefault.jpg)](https://youtu.be/YhkbONNSTbM)
 
 ![DIAGRAMA](./docs/figs/Href_Pclk.png)
+Se visualizan las señales de Href (azul) y Pclk (amarillo), en el osciloscopio se observa que están a la misma freceuncia, lo cual no es coherente con la sincronización que requiere la cámara, por tanto, es un apartado por corregir.
 
 ![DIAGRAMA](./docs/figs/Href_Vsync.png)
 
