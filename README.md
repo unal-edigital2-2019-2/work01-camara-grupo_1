@@ -78,7 +78,7 @@ Al culminar los hitos anteriores deben:
 
 ***RECUEDE: Es necesario documentar la implementación y registrar la información en README.md, lo puede hacer con ayuda de imágenes o videos***
 
-### Resultados de la implementación
+## Resultados de la implementación
 
 A continuación se presentan los resultados obtenidos de la implementación del proyecto en relación con los hitos previamente definidos.
 
