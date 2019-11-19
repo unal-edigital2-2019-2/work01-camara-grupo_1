@@ -78,6 +78,18 @@ Al culminar los hitos anteriores deben:
 
 ***RECUEDE: Es necesario documentar la implementación y registrar la información en README.md, lo puede hacer con ayuda de imágenes o videos***
 
+
+### UCF
+
+Un aspecto fundamental a la hora de implementar el módulo de control de la camara es la conexión de nuestras entradas y salidas a los pines correspondientes en la tableta programable FPGA. En nuestro caso en particular se eligió utilizar una Nexys 4 y se procedió a crear un archivo UCF que nos permitieran definir los pines internos a utilizar y sus conexiones con el módulo diseñado. Para esto se utilizó como plantilla el **UCF** proporcionado por el fabricante, y modificando solo los parámetros de interés, los cuales incluyen: 
+
+* Conexión VGA
+* Módulo de captura de video
+
+Otro conexión clave para el funcionamiento del módulo diseñado es la de la señal de reloj proporcionada nativamente por el reloj interno de la FPGA. Por ello en el UCF también se definió la conexión de este con el **PLL**, lo cual nos permite generar las dos señales de reloj internas requeridas en nuestro proyecto.
+
+El archivo `Nexys4.ucf` contiene todas estas condiciones mencionadas anteriormente, por lo que si se desea analizar en mas detalles cada uno de los pines utilizados se puede conseguir en la carpeta `/hw/`.
+
 ## Resultados de la implementación
 
 A continuación se presentan los resultados obtenidos de la implementación del proyecto en relación con los hitos previamente definidos.
