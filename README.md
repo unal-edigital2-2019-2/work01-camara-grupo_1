@@ -78,4 +78,4 @@ Al culminar los hitos anteriores deben:
 
 ***RECUEDE: Es necesario documentar la implementación y registrar la información en README.md, lo puede hacer con ayuda de imágenes o videos***
 
-
+![DIAGRAMA](./docs/figs/First_test.png)
