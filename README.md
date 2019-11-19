@@ -94,15 +94,23 @@ El archivo `Nexys4.ucf` contiene todas estas condiciones mencionadas anteriormen
 
 A continuación se presentan los resultados obtenidos de la implementación del proyecto en relación con los hitos previamente definidos.
 
-En primer lugar se implementaron los módulos Captura_de_datos.vy clk24_25_nexys4.v dentro del proyecto dado al instanciarles en el módulo principal test_cam.v y conectarles con los módulos VGA_Driver.v y buffer_ram_dp.v, respectivamente.
+En primer lugar se implementaron los módulos `Captura_de_datos.v` y `clk24_25_nexys4.v` dentro del proyecto dado al instanciarles en el módulo principal `test_cam.v` y conectarles con los módulos `VGA_Driver.v` y `buffer_ram_dp.v`, respectivamente.
+
+Una vez, se realizó la conexión completa de los módulos funcionales del proyecto se prosiguió a probar la adecuada configuración del puerto VGA de la Nexys, para lo cual se sintetizó e implementó el proyecto para cargar el archivo .bit a la FPGA. El resultado de esta prueba sin conectar la cámara se presenta en la siguiente imagen.
 
 ![DIAGRAMA](./docs/figs/First_test.png)
 
+En la imagen anterior es posible visualizar que en la pantalla a la que está conectada la FPGA muetra una serie de barras en una pequeña región de la pantalla únicamente, lo cual indica la adecuada configuración del puerto VGA ya que dicha área corresponde a la zona predefinida para visualización.
+
+Posterior a la prueba de configuración del puerto VGA, se decidió probar el funcionamiento de la transmisión de datos desde la cámara, para lo cual se conectó la cámara a la FPGA y se la reprogramó para observar la salida en la pantalla. El resultado de esta prueba se presenta en el siguiente video.
 
 [![Watch the video](https://img.youtube.com/vi/YhkbONNSTbM/hqdefault.jpg)](https://youtu.be/YhkbONNSTbM)
 
+Los resultados de esta prueba, sin embargo, no resultaron ser del todo satisfactorios, ya que como se puede observar la transmisión de datos no se da de manera adecuada. En un principio se creyó que esta falla se debía a que en ese momento no se había configurado adecuadamente el formato de salida de los datos de la cámara por medio del i2c, sin embargo, en una posterior sesión se determinó que el comportamiento presentado se debía a más que a la falta de configuración de la cámara y existían problemas de sincronización en el módulo `Captura_de_datos.v`, como lo demuestran las siguientes pruebas hechas con el osciloscopio sobre la relación entre las señales **Href**, **Pclk** y **Vsync**.
+
 ![DIAGRAMA](./docs/figs/Href_Pclk.png)
-Se visualizan las señales de Href (azul) y Pclk (amarillo), en el osciloscopio se observa que están a la misma freceuncia, lo cual no es coherente con la sincronización que requiere la cámara, por tanto, es un apartado por corregir.
+
+En la imagen anterior se visualizan las señales de Href (azul) y Pclk (amarillo), en el osciloscopio se observa que están a la misma frecuencia, lo cual no es coherente con la sincronización que requiere la cámara, por tanto, es un apartado por corregir.
 
 ![DIAGRAMA](./docs/figs/Href_Vsync.png)
 
