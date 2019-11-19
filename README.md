@@ -78,6 +78,12 @@ Al culminar los hitos anteriores deben:
 
 ***RECUEDE: Es necesario documentar la implementación y registrar la información en README.md, lo puede hacer con ayuda de imágenes o videos***
 
+### Resultados de la implementación
+
+A continuación se presentan los resultados obtenidos de la implementación del proyecto en relación con los hitos previamente definidos.
+
+En primer lugar se implementaron los módulos `Captura_de_datos.v`y `clk24_25_nexys4.v` dentro del proyecto dado al instanciarles en el módulo principal `test_cam.v` conectarles con los módulos `VGA_Driver.v` y `buffer_ram_dp.v`, respectivamente. 
+
 ![DIAGRAMA](./docs/figs/First_test.png)
 
 [![Watch the video](https://img.youtube.com/vi/YhkbONNSTbM/hqdefault.jpg)](https://youtu.be/YhkbONNSTbM)
